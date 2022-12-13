@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+html
+  head
+
+    title Password Generate
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    link(rel="stylesheet" type="text/css" href='password.css')
+    
+  body
+  
+   div.containerall
+    h1 Generate Password
+   
+    div.container
+      div.header
+        div.pw
+          span#pw Password Here
+          button#copy Copy
+      div.body
+           div.form-control
+              label(for="length") Password Length
+              input(type="number" id="len" value="9" min="8" max="30")
+
+           div.form-control
+              label(for="upper") Contain Uppercase Letters
+              input(type="checkbox" id="upper")
+
+           div.form-control
+              label(for="lower") Contain Lowercase Letters
+              input(type="checkbox" id="lower")
+
+           div.form-control
+              label(for="number") Contain Numbers
+              input(type="checkbox" id="number")
+
+           div.form-control
+              label(for="symbol") Contain Symbol
+              input(type="checkbox" id="symbol")
+           button.generate#generate Generate Password
+    
+    script(src="password.js")    
+
+              
+            
+            
+
+  
